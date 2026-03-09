@@ -1,6 +1,12 @@
 ---
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
+ci:
+    autoupdate_commit_msg: 'chore: update pre-commit hooks'
+    autoupdate_schedule: monthly
+    autofix_commit_msg: 'style: pre-commit fixes'
+    autofix_prs: false
+
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
