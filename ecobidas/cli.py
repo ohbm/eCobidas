@@ -37,7 +37,7 @@ def cli(argv: Sequence[str] = sys.argv) -> None:
     verbosity = args.verbosity
     set_verbosity(verbosity)
 
-    if args.command in ["convert"]:
+    if args.command == "convert":
         schema = args.schema[0]
         output_dir = args.output_dir
         repo = args.repo
@@ -48,12 +48,12 @@ def cli(argv: Sequence[str] = sys.argv) -> None:
         convert(schema, output_dir, repo, branch)
         sys.exit(0)
 
-    if args.command in ["update"]:
+    if args.command == "update":
         schema = args.schema[0]
         download_spreadsheet(schema=schema)
         sys.exit(0)
 
-    if args.command in ["serve"]:
+    if args.command == "serve":
         folder = args.folder if args.folder is None else args.folder[0]
         serve(folder=folder)
         sys.exit(0)
