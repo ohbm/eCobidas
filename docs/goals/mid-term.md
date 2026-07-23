@@ -7,7 +7,7 @@ and to minimize the amount of time the user has to interact with the checklist.
 ## Improve user-friendliness
 
 In line with the idea of trying to minimize how much time the users have to spend using the app,
-we want to pre-select response choices to some items depending on the software users report having used in their analysis.
+we want to preselect response choices to some items depending on the software users report having used in their analysis.
 
 For example, if SPM was used to do slice timing correction, there is no reason to ask users
 what type of interpolation was used as SPM does not give users the possibility to choose that parameter.
