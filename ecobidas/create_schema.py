@@ -21,7 +21,7 @@ from ecobidas.utils import (
 
 
 def create_schema(
-    this_schema: str, output_dir: None | str | Path = None, debug: bool = False
+    this_schema: str, output_dir: str | Path | None = None, debug: bool = False
 ) -> Protocol:
     """
     Take the content of the a csv file and turns it into a reproschema protocol.
